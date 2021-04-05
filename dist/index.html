@@ -1,0 +1,20 @@
+<script type="text/javascript">
+  RED.nodes.registerType("speedtest-cloudflare", {
+    category: 'network',
+    inputs: 1,
+    outputs: 1,
+    icon: 'white-globe.png',
+    label: function() {
+      return this.name || 'speedtest-cloudflare';
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="speedtest-cloudflare">
+  <div class="form-row">
+    <label for="node-input-token"><i class="fa fa-key"></i> Token</label>
+    <input type="text" id="node-input-token" placeholder="">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="speedtest-cloudflare"><p>A node for measuring Internet connection speed via Cloudflare.</p></script>
