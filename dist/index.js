@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const speedtest_cloudflare_1 = require("./speedtest-cloudflare");
 const init = RED => {
     function SpeedTest(config) {
@@ -19,4 +18,4 @@ const init = RED => {
     }
     RED.nodes.registerType('speedtest-cloudflare', SpeedTest);
 };
-exports.default = init;
+module.exports = init;

@@ -20,4 +20,4 @@ const init: NodeInitializer = RED => {
 
   RED.nodes.registerType('speedtest-cloudflare', SpeedTest);
 };
-export default init;
+export = init;
