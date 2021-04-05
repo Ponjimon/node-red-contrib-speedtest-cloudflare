@@ -12,6 +12,11 @@
   "scripts": {
     "build": "klap build"
   },
+  "node-red": {
+    "nodes": {
+      "speedtest-cloudflare": "dist/index.js"
+    }
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
