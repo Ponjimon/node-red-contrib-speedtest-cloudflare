@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import https, { RequestOptions } from 'https';
 import { performance } from 'perf_hooks';
 import { URL } from 'url';

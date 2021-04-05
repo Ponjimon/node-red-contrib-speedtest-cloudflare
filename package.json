@@ -3,14 +3,11 @@
   "version": "0.1.0",
   "description": "A NodeRED plugin for measuring Internet speed via Cloudflare.",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "source": "src/index.ts",
-  "types": "dist/index.d.ts",
   "repository": "git@github.com:Ponjimon/node-red-contrib-speedtest-cloudflare.git",
   "author": "Simon <sn@hitbox.tv>",
   "license": "MIT",
   "scripts": {
-    "build": "klap build"
+    "build": "mkdir -p dist/ && cp -a src/index.html dist/ && tsc"
   },
   "node-red": {
     "nodes": {
@@ -96,12 +93,9 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "husky": "^6.0.0",
-    "klap": "^6.1.4",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "typescript": "^4.2.3"
   },
-  "dependencies": {
-    "node-fetch": "^2.6.1"
-  }
+  "dependencies": {}
 }
